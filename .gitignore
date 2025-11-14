@@ -17,3 +17,6 @@ terraform.tfvars
 # OS-specific
 .DS_Store
 Thumbs.db
+
+
+.terraform.lock.hcl

@@ -8,13 +8,13 @@ terraform {
     }
   }
 
-  # Remote backend configuration (Azure Storage)
-  # backend "azurerm" {
-  #   resource_group_name   = "ah-db-rg"        
-  #   storage_account_name  = "tfstate1234512" 
-  #   container_name        = "ahvmcontainer"
-  #   key                   = "vm-terraform.tfstate"
-  # }
+ #Remote backend configuration (Azure Storage)
+  backend "azurerm" {
+    resource_group_name   = "ah-db-rg"        
+    storage_account_name  = "tfstate1234512" 
+    container_name        = "k3s-cluster-infra"
+    key                   = "K3S-Cluster-terraform.tfstate"
+  }
 }
 
 provider "azurerm" {
