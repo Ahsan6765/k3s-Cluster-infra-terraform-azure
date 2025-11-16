@@ -28,3 +28,6 @@ sudo k3s kubectl get nodes
 10.0.1.5
 
 curl -sfL https://get.k3s.io | K3S_URL=https://10.0.1.5:6443 K3S_TOKEN=K108b7e0a238e080d6b82b4edcabf929b918a93372cfb1ce8c5c0b99661933b0f82::server:b150a59cecff502614f2ef6f9aa4d6ff sh -
+
+
+follow these steps for cluster setup.
