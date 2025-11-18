@@ -1,33 +1,40 @@
 follow these
-
+Step 1:
 Install K2s Cluster Script given belwo:
 curl -sfL https://get.k3s.io | sh - 
 # Check for Ready node, takes ~30 seconds 
 sudo k3s kubectl get node 
 
+OR
+
+curl -sfL https://get.k3s.io | sh - 
+# Check for Ready node, takes ~30 seconds 
+sudo k3s kubectl get node 
+
+
 ===================================================
-Step 1: Get the K3s Token from the Master Node
+Step 2: Get the K3s Token from the Master Node
 sudo cat /var/lib/rancher/k3s/server/node-token
 Copy this token — you'll need it on the worker nodes.
 
 ===================================================
-Step 2: Get the Master Node's IP Address
+Step 3: Get the Master Node's IP Address
 hostname -I
 Or use:
 ip a | grep inet
 
 ===================================================
-Step 3: Install K3s Agent on Worker Nodes
+Step 4: Install K3s Agent on Worker Nodes
 curl -sfL https://get.k3s.io | K3S_URL=https://<master-INTERNAL-IP>:6443 K3S_TOKEN=<master-token-here> sh -
 
 ===================================================
-Step 4: Verify Node Join
+Step 5: Verify Node Join
 sudo k3s kubectl get nodes
 
 
 10.0.1.5
 
-curl -sfL https://get.k3s.io | K3S_URL=https://10.0.1.5:6443 K3S_TOKEN=K108b7e0a238e080d6b82b4edcabf929b918a93372cfb1ce8c5c0b99661933b0f82::server:b150a59cecff502614f2ef6f9aa4d6ff sh -
+curl -sfL https://get.k3s.io | K3S_URL=https://10.0.1.6:6443 K3S_TOKEN=K10eb89613137856c7cbd36bc7ed15a2af686af2ec284fff10264e741de2ed25405::server:eee1657f03b0f755dfdc6361eb5af61a sh -
 
 
 follow these steps for cluster setup.
