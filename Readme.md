@@ -32,9 +32,16 @@ Step 5: Verify Node Join
 sudo k3s kubectl get nodes
 
 
-10.0.1.5
+Step 4: Install K3s Agent on Worker Nodes Template here --- update this with master internal ip and master token and use it on the workers.
 
-curl -sfL https://get.k3s.io | K3S_URL=https://10.0.1.6:6443 K3S_TOKEN=K10eb89613137856c7cbd36bc7ed15a2af686af2ec284fff10264e741de2ed25405::server:eee1657f03b0f755dfdc6361eb5af61a sh -
+curl -sfL https://get.k3s.io | K3S_URL=https://10.0.1.5:6443 K3S_TOKEN=K10cca107d1205dd2b65a102841c296b6db4f7b274d92b501df83715dcc6b01eea6::server:caba68d3cb2e6ed555cce6d1a3ba038f sh -
 
 
 follow these steps for cluster setup.
+
+==============================================================================================================================================================================================
+
+Type:  kubernetes.io/service-account-token
+
+
+eyJhbGciOiJSUzI1NiIsImtpZCI6InplOF9mTFJFNGhsdDQ5UG5wV0lpaVh5Q2JmTkctR1VDVmplR2l1N3ptalkifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlcm5ldGVzLWRhc2hib2FyZCIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJhZG1pbi11c2VyLXRva2VuIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6ImFkbWluLXVzZXIiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC51aWQiOiI3NmExYzk3YS1kZGViLTQwZjItODcyMy1hZTdkZTYzYzY0MTQiLCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6a3ViZXJuZXRlcy1kYXNoYm9hcmQ6YWRtaW4tdXNlciJ9.lZhasOg6iTvgvsRAuKETOVqg83ZIfEBLS0BmFct8ufM4QCQe6wG4XBc189HPnjPnx7SPKMMLxm8XsHR95675jrKE2cwkqF4CyktxQI4K4hQd05vxcCIbAU8QGUn0WsIQ4Do5nQMwToTBFAmHve6hFdwNCj8SKQxtl-xictzY-ui_ZzTapqubzSNVVDzBbmitB7fA5AmNjlv3JifVgatA3yB1liPsrzP99yk10VbJbZf77WZtn8lfHEVgY4cGT9NkCh6S1VyMQAfa90TewxK9tX4eCor-UZYiT0A_O0U5WIfx2z0gf8iakX9S1bhTXjME09KeM3BjlGdE2JldWobKXg
