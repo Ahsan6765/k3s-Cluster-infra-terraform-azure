@@ -189,3 +189,15 @@ kubectl get svc nginx-service
 
 You’ll see a NodePort (e.g., 30080). Access via:
 http://<nodeIP>:<nodePort>
+
+
+
+
+    terraform force-unlock a08d3d19-f53e-7815-530c-72e57758c920
+ssh -i /home/ahsan-malik/Desktop/k3s-Cluster-infra/ssh/id_rsa azureuser@20.185.80.86
+
+
+
+-L 8001:localhost:8001
+ssh -i /home/ahsan-malik/Desktop/k3s-Cluster-infra/ssh/id_rsa -L 8001:localhost:8001 azureuser@172.173.173.68
+ssh -i "/home/ahsan-malik/Desktop/k3s-Cluster-infra/ssh/id_rsa" azureuser@52.168.182.69
