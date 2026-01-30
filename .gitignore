@@ -1,0 +1,22 @@
+# Terraform directories
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+*.log
+
+# Sensitive files
+terraform.tfvars
+*.auto.tfvars
+
+# IDE/editor files
+.vscode/
+.idea/
+*.swp
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+
+.terraform.lock.hcl
